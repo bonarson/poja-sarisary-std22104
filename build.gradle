@@ -22,7 +22,7 @@ repositories {
 }
 
 java {
-    group = 'com.poja.poja-sarisary-std22104'
+    group = 'hei.school.sarisary'
     sourceCompatibility = '17'
     targetCompatibility = '17'
 }
