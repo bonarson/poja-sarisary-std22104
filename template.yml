@@ -48,7 +48,7 @@ Resources:
   FrontalFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: hei.school.sarisary.ApiEventHandler::handleRequest
+      Handler: com.poja.poja-sarisary-std22104.ApiEventHandler::handleRequest
       MemorySize: 512
       Role: !Sub '{{resolve:ssm:/poja-sarisary-std22104/${Env}/execution/role-arn}}'
       FileSystemConfigs:
@@ -66,7 +66,7 @@ Resources:
   WorkerFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: hei.school.sarisary.MailboxEventHandler::handleRequest
+      Handler: com.poja.poja-sarisary-std22104.MailboxEventHandler::handleRequest
       MemorySize: 512
       Role: !Sub '{{resolve:ssm:/poja-sarisary-std22104/${Env}/execution/role-arn}}'
       FileSystemConfigs:

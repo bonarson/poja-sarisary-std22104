@@ -112,7 +112,7 @@ Resources:
       EventBusName: !GetAtt EventBridgeBus.Name
       EventPattern:
         source:
-          - hei.school.sarisary
+          - com.poja.poja-sarisary-std22104
       Targets:
         - Arn: !GetAtt MailboxQueue.Arn
           Id: !Join ['', [!Ref Env, -poja-sarisary-std22104, -api-mailbox]]
